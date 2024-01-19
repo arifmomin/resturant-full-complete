@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resturant Website</title>
+  <link rel="Website icon" type="png" href="image/menu logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responesive.css">
+  <!-- ekhon ja khusi change korbi, noto file add korbi, remove korbi, tarpor shodo commit & push korbi github e update hoye jabe okh -->
+</head>
+
+<body>
+  <!-- ==================back to top button================== -->
+  <div class="back_to_top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- -----------------back to top button------------------ -->
+  <!-- ==============pre loader start================ -->
+  <div class="lds-default">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- -----------------pre loader end ----------------- -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span preloader-text="A" class="characters">A</span>
+          <span preloader-text="R" class="characters">R</span>
+          <span preloader-text="I" class="characters">I</span>
+          <span preloader-text="F" class="characters">F</span>
+          <span preloader-text="M" class="characters">M</span>
+          <span preloader-text="O" class="characters">O</span>
+          <span preloader-text="M" class="characters">M</span>
+          <span preloader-text="I" class="characters">I</span>
+          <span preloader-text="N" class="characters">N</span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+  <!--==================header part srtart====================== -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header_row">
+            <div class="header_contact">
+              <a href="tel:"> <span><i class="fa-solid fa-phone"></i></span>01716378105</a>
+              <a href="mailto:"><span><i class="fa-regular fa-envelope"></i></span>arifmominweb@gmail.com</a>
+            </div>
+            <div class="header_search">
+              <input type="text" placeholder="Search your Favourite Food">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="header_col">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="flag" src="image/America Flag.png" class="image-fluid w-100" alt=" flag"> English <span><i
+                      class="fa-solid fa-chevron-down"></i></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button"><img class="flag" src="image/Bangladeh Flag.png"
+                        class="image-fluid w-100" alt=" flag">Bangla </button></li>
+                  <li><button class="dropdown-item" type="button"><img class="flag" src="image/india.png"
+                        class="image-fluid w-100" alt=" flag">Hindi</button></li>
+                  <li><button class="dropdown-item" type="button"><img class="flag" src="image/Arabic.png"
+                        class="image-fluid w-100" alt=" flag">Arabic</button></li>
+                </ul>
+              </div>
+              <div class="header_icon">
+                <a href="#"><i class="fa-solid fa-basket-shopping"></i><span>03</span></a>
+              </div>
+              <div class="header_profile">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ------------------header  part end-------------------- -->
+  <!-- ====================menu bar start=================== -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary menu_bar">
+    <div class="container">
+      <a class="navbar-brand menu_logo" href="#"><img src="image/menu logo.png" class="image-fluid w-100"
+          alt="menu logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav m-auto my-2 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#our_service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#navs">Manu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#news">Blog</a>
+          </li>
+          <div class="menu_button">
+            <a href="#">Book A Table
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ------------menu bar end------------- -->
+  <!-- ===============banner part start=========== -->
+  <section id="banner">
+    <div class="container">
+      <div class="banner_row">
+        <div class="banner_col">
+          <div class="banner_heading_row">
+            <div class="heading_text">
+              <div class="heading_animation">
+                <div class="parrents">
+                  <div class="word"></div>
+                </div>
+              </div>
+              <h2>EAT & ENJOY</h2>
+              <p>ENTER WITH A HAPPY HEART MAY ALL WHO ENTER AS GUEST LEAVE US FRIEND </p>
+            </div>
+            <div class="banner_button">
+              <a href="#">Order now</a>
+              <a href="#">Our Branch</a>
+            </div>
+          </div>
+          <div class="banner_img three">
+            <img src="image/pngegg (1).png" class="image-fluid w-100" alt="banner">
+          </div>
+        </div>
+        <div class="banner_col col_two">
+          <div class="banner_img one">
+            <img src="image/pngegg (2).png" class="image-fluid w-100" alt="banner">
+          </div>
+          <div class="banner_heading_row">
+            <div class="heading_text">
+              <div class="heading_animation">
+                <h1><span>Welcome To</span>
+                  <span>Welcome To</span>Our Resturant</h1>
+              </div>
+              <h2>EAT & ENJOY</h2>
+              <p>ENTER WITH A HAPPY HEART MAY ALL WHO ENTER AS GUEST LEAVE US FRIEND </p>
+            </div>
+            <div class="banner_button">
+              <a href="#">Order now</a>
+              <a href="#">Our Branch</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner_col col_three">
+          <div class="banner_heading_row">
+            <div class="heading_text">
+              <div class="heading_animation">
+                <div id="contain">
+                  <span id="text1"></span>
+                  <span id="text2"></span>
+                </div>
+                <svg id="filters">
+                  <defs>
+                    <filter id="threshold">
+                      <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 255 -140" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <h2>EAT & ENJOY</h2>
+              <p>ENTER WITH A HAPPY HEART MAY ALL WHO ENTER AS GUEST LEAVE US FRIEND </p>
+            </div>
+            <div class="banner_button">
+              <a href="#">Order now</a>
+              <a href="#">Our Branch</a>
+            </div>
+          </div>
+          <div class="banner_img two">
+            <img src="image/banner secound.png" class="image-fluid w-100" alt="banner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------banner part end------------ -->
+  <!-- =============================about part start========================== -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div data-aos="fade-up-right" data-aos-duration="1500" class="about_col">
+            <div class="about_img">
+              <img src="image/drinks  (5).jpg" class="image-fluid w-100" alt="about img">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about_col">
+            <div data-aos="fade-up-left" data-aos-duration="1500" class="about_haeding">
+              <h2>About <span>Us</span></h2>
+              <h3>We are Tasty</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's stan
+                dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to
+                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" class="about_button">
+              <a class="read_more" href="#"> Read More</a>
+              <a class="read_icon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------about part end--------------------------- -->
+  <!-- =================================our menu part start=============================== -->
+  <section id="our_service">
+    <div class="container">
+      <div class="row">
+        <div class="col_lg_12">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="our_service_head">
+            <h2>Our Service</h2>
+          </div>
+          <div class="our_service_row">
+            <div data-aos="fade-up-right" data-aos-duration="1500" class="our_service_col">
+              <div class="our_service_img">
+                <img src="image/Breakfast.jpg" alt="menu_img">
+              </div>
+              <div class="our_service_text one">
+                <h2>Breakfast Menu</h2>
+                <h3>30+ Item</h3>
+                <p>View All<span><i class="fa-solid fa-arrow-right-long"></i></span></p>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="our_service_col">
+              <div class="our_service_img">
+                <img src="image/Lunch .png" alt="menu_img">
+              </div>
+              <div class="our_service_text two">
+                <h2>Lunch Menu</h2>
+                <h3>70+ Item</h3>
+                <p>View All<span><i class="fa-solid fa-arrow-right-long"></i></span></p>
+              </div>
+            </div>
+            <div data-aos="fade-up-left" data-aos-duration="1500" class="our_service_col">
+              <div class="our_service_img">
+                <img src="image/Dinner.jpg" alt="menu_img">
+              </div>
+              <div class="our_service_text three">
+                <h2>Dinner Menu</h2>
+                <h3>50+ Item</h3>
+                <p>View All<span><i class="fa-solid fa-arrow-right-long"></i></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="all_service">
+            <h2>All Menu <span><i class="fa-solid fa-arrow-right fa-l"></i></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------------------------our menu part end------------------------------- -->
+  <!-- ==============================food_menu part start=========================== -->
+  <section data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-sine" id="navs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="food_menu_head">
+            <h2>Food Menu</h2>
+          </div>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="meat_tab" data-bs-toggle="tab" data-bs-target="#meat" type="button"
+                role="tab" aria-controls="meat" aria-selected="true">Meat</button>
+              <button class="nav-link" id="fish_tab" data-bs-toggle="tab" data-bs-target="#fish" type="button"
+                role="tab" aria-controls="fish" aria-selected="false">Fish</button>
+              <button class="nav-link" id="fastfood_tab" data-bs-toggle="tab" data-bs-target="#fastfood" type="button"
+                role="tab" aria-controls="fastfood" aria-selected="false">Fast Food</button>
+              <button class="nav-link" id="dessert_tab" data-bs-toggle="tab" data-bs-target="#dessert" type="button"
+                role="tab" aria-controls="dessert" aria-selected="true">Dessert</button>
+              <button class="nav-link" id="chinese_tab" data-bs-toggle="tab" data-bs-target="#chinese" type="button"
+                role="tab" aria-controls="chinese" aria-selected="false">Chinese</button>
+              <button class="nav-link" id="drinks_tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button"
+                role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="meat" role="tabpanel" aria-labelledby="meat_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (1).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (2).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (3).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (4).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (5).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (6).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food menu 7.jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food menu 8.jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/food_one (1).png" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Beef Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="fish" role="tabpanel" aria-labelledby="fish_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (1).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (2).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (3).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (4).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (5).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (6).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (7).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item  (8).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/fish item 9.jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fish Dishes</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="fastfood" role="tabpanel" aria-labelledby="fastfood_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (1).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (2).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (3).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (4).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (5).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (7).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (8).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (9).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Fast Food</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Fast food (10).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Desert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="dessert" role="tabpanel" aria-labelledby="dessert_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (1).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (2).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (3).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (4).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (5).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (6).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (7).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (8).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/desset item (9).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Dessert Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="chinese" role="tabpanel" aria-labelledby="chinese_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (1).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (2).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (3).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (4).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (5).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (6).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (7).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (8).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/Chines item (9).jpeg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>chinese Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks_tab" tabindex="0">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (1).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (2).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (3).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (4).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (5).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (6).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (7).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (8).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="menu_col">
+                      <div class="food_menu_img">
+                        <img src="image/drinks  (9).jpg" alt="food">
+                        <div class="food_menu_icon">
+                          <a href="#"><i class="fa-regular fa-heart"></i></a>
+                          <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                          <a href="#"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                      </div>
+                      <div class="food_menu_heading">
+                        <h3>Drinks Item</h3>
+                        <div class="menu_rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>$9.99</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------food menu part end------------------- -->
+  <!-- =================special_menu part start================== -->
+  <section id="special_menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-sine"
+            class="special_heading">
+            <h2> <span> Special</span> Menu</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="special_menu_row">
+            <div data-aos="fade-right" data-aos-duration="2000" class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (1).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="2000" class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (2).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000" class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (3).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (4).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (5).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (6).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (7).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="special_menu_col">
+              <div class="special_img">
+                <img src="image/special menu (8).jpg" alt="special menu">
+                <div class="special_menu_icon">
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                  <a href="#"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="special_head">
+                  <h3>Chess Burger</h3>
+                  <div class="special_rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>$9.99 - <span>$8.99</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------special menu part end------------------- -->
+  <!-- =================our team part start================== -->
+  <section id="our_team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div data-aos="zoom-in-down" data-aos-duration="1000" class="team_heading">
+            <h2>Team Member</h2>
+            <h3>We Have A Professional Team</h3>
+          </div>
+        </div>
+        <div class="team_row">
+          <div data-aos="zoom-in-right" data-aos-duration="1000" class="team_col">
+            <div class="team_rotated">
+              <img class="rotated" src="image/rotated.png" alt="rotated">
+              <div class="team_member_img">
+                <img src="image/member.png" alt="member">
+                <div class="team_contact">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="member_name">
+                  <h4>Arif Momin</h4>
+                  <p>Main Chef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1000" class="team_col">
+            <div class="team_rotated">
+              <img class="rotated" src="image/rotated.png" alt="rotated">
+              <div class="team_member_img">
+                <img src="image/member1.png" alt="member">
+                <div class="team_contact">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="member_name">
+                  <h4>Natasha</h4>
+                  <p>Sous Chef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" data-aos-duration="1000" class="team_col">
+            <div class="team_rotated">
+              <img class="rotated" src="image/rotated.png" alt="rotated">
+              <div class="team_member_img">
+                <img src="image/member3.png" alt="member">
+                <div class="team_contact">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="member_name">
+                  <h4>David</h4>
+                  <p>Seniour Chef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team_col">
+            <div class="team_rotated">
+              <img class="rotated" src="image/rotated.png" alt="rotated">
+              <div class="team_member_img">
+                <img src="image/member.png" alt="member">
+                <div class="team_contact">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="member_name">
+                  <h4>Natasha</h4>
+                  <p>Main Chef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team_col">
+            <div class="team_rotated">
+              <img class="rotated" src="image/rotated.png" alt="rotated">
+              <div class="team_member_img">
+                <img src="image/member.png" alt="member">
+                <div class="team_contact">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="member_name">
+                  <h4>Natasha</h4>
+                  <p>Main Chef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="team_button">
+        <a href="#">About More</a>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------our team part end------------------- -->
+  <!-- =================gallery part start================== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div data-aos="fade-up" data-aos-duration="2000" class="gallery_heading">
+            <h2>OUR DELICIOUS GALLERY</h2>
+            <h3>Dishes Gallery</h3>
+            <p>"If you really want to make a friend, go to someone's house and eat with him the people who give you
+              their food give you their heart." - Arif Momin</p>
+          </div>
+          <div class="gallery_row">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"
+              class="gallery_colam">
+              <div class="gallery_img">
+                <img src="image/big 1.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/small 1.png" alt="image">
+                <div class="gallery_img_icon small_img">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 2.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"
+              class="gallery_colam">
+              <div class="gallery_img">
+                <img src="image/small 2.png" alt="image">
+                <div class="gallery_img_icon small_img">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 3.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 4.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"
+              class="gallery_colam">
+              <div class="gallery_img">
+                <img src="image/big 5.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/small 3.png" alt="image">
+                <div class="gallery_img_icon small_img">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 6.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"
+              class="gallery_colam">
+              <div class="gallery_img">
+                <img src="image/gallery s.png" alt="image">
+                <div class="gallery_img_icon small_img">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 7.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+              <div class="gallery_img">
+                <img src="image/big 8.png" alt="image">
+                <div class="gallery_img_icon">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------gallery part end------------------- -->
+  <!-- ================= latest news part start================== -->
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="news_heading">
+            <h2>Latest News</h2>
+            <h3>News & Blogs</h3>
+          </div>
+          <div class="news_row">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="news_col">
+              <div class="news_video">
+                <iframe src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1 controls=0">
+                </iframe>
+              </div>
+              <div class="news_head">
+                <h2>New Resturant Town </h2>
+                <p>Lorem lorem lorem lroem loem lseirjna aslikdhf laskd lefjh laskdf lasj flasd fsdjfh skfg.</p>
+                <div class="news_comment">
+                  <h3>Nov,10,2023-</h3>
+                  <h4><i class="fa-solid fa-thumbs-up"></i> <span>Like</span></h4>
+                  <h5><i class="fa-regular fa-comment"></i><span>Comment</span></h5>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="news_col">
+              <div class="news_video">
+                <iframe src="https://www.youtube.com/embed/NC9KlaxtfLg?autoplay=1&mute=1&loop=1">
+                </iframe>
+              </div>
+              <div class="news_head">
+                <h2>New Resturant Town </h2>
+                <p>Lorem lorem lorem lroem loem lseirjna aslikdhf laskd lefjh laskdf lasj flasd fsdjfh skfg.</p>
+                <div class="news_comment">
+                  <h3>Nov,10,2023-</h3>
+                  <h4><i class="fa-solid fa-thumbs-up"></i> <span>Like</span></h4>
+                  <h5><i class="fa-regular fa-comment"></i><span>Comment</span></h5>
+                </div>
+              </div>
+            </div>
+            <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="news_col">
+              <div class="news_video">
+                <iframe src="https://www.youtube.com/embed/7EdpBH81XIY?autoplay=1&mute=1&loop=1">
+                </iframe>
+              </div>
+              <div class="news_head">
+                <h2>New Resturant Town </h2>
+                <p>Lorem lorem lorem lroem loem lseirjna aslikdhf laskd lefjh laskdf lasj flasd fsdjfh skfg.</p>
+                <div class="news_comment">
+                  <h3>Nov,10,2023-</h3>
+                  <h4><i class="fa-solid fa-thumbs-up"></i> <span>Like</span></h4>
+                  <h5><i class="fa-regular fa-comment"></i><span>Comment</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------latest news part end------------------- -->
+  <!-- ========================== food delivery start======================= -->
+  <section id="delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="delivery_col">
+            <div class="delivery_img">
+              <img class="delivery_image" src="image/delivery.png" class="image-fluid w-100" alt="delivery man">
+              <div class="resturant_head">
+                <div class="resturant_icon">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                </div>
+                <div class="resturant_heading">
+                  <h2>10 Restaurant</h2>
+                  <p>in your city</p>
+                </div>
+              </div>
+              <div class="delivery_colam">
+                <div class="dleivery_colam_img">
+                  <img src="image/delivery colam img.png" class="image-fluid w-100" alt="delivery img">
+                </div>
+                <div class="delivery_colam_heading">
+                  <h2>Your nearest</h2>
+                  <p>Resturant</p>
+                  <div class="delivery_colam__rating">
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="delivery_text">
+            <h2>Food Delivery</h2>
+            <h3>The Best Resturant in your Home</h3>
+            <p>The Atrium Restaurant, a timeless establishment with a vintage charm, offers delectable Thai and Indian
+              cuisine. Known as one of Dhaka's most renowned dining spots, it provides an enchanting ambiance that is
+              sure to leave a lasting impression</p>
+            <div class="delivery_button">
+              <a href="#">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------food delivery end-------------------------- -->
+  <!-- =======================fastest delivery start====================== -->
+  <section id="fastest_delivery">
+    <div class="container">
+      <div class="fastest_row">
+        <div data-aos="zoom-in" data-aos-duration="2000" class="fastest_delivery_heading">
+          <h2>Fastest <span>Delivery</span></h2>
+          <p>Get your food delivered in less than an hour! That’s as fast as it can get.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500"
+          class="fastest_delivery_img">
+          <img src="image/fastest delivery.png" class="image-fluid w-100" alt="delivery_man">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------------fastest delivery end--------------------- -->
+  <!-- ========================customar part start====================== -->
+  <section data-aos="zoom-in-down" data-aos-duration="1500" id="customar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="customar_heading">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="customar_row">
+            <div class="customar_col">
+              <div class="customar_img">
+                <img src="image/client.png" class="image-fluid w-100" alt="client">
+              </div>
+              <div class="customar_name">
+                <h4>Arif Momin</h4>
+              </div>
+              <div class="customar_rating">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="customar_comment">
+                <p>Mind blowing design and coading quality. easy to customaize easy to use and i just loveing with this
+                  templete Mind blowing design and coading quality. easy to customaize easy to use and i just loveing
+                  with this templete </p>
+              </div>
+            </div>
+            <div class="customar_col">
+              <div class="customar_img">
+                <img src="image/client.png" class="image-fluid w-100" alt="client">
+              </div>
+              <div class="customar_name">
+                <h4>Aminul Haque</h4>
+              </div>
+              <div class="customar_rating">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="customar_comment">
+                <p>Mind blowing design and coading quality. easy to customaize easy to use and i just loveing with this
+                  templete Mind blowing design and coading quality. easy to customaize easy to use and i just loveing
+                  with this templete </p>
+              </div>
+            </div>
+            <div class="customar_col">
+              <div class="customar_img">
+                <img src="image/client.png" class="image-fluid w-100" alt="client">
+              </div>
+              <div class="customar_name">
+                <h4>Ferdous Buhiya</h4>
+              </div>
+              <div class="customar_rating">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="customar_comment">
+                <p>Mind blowing design and coading quality. easy to customaize easy to use and i just loveing with this
+                  templete Mind blowing design and coading quality. easy to customaize easy to use and i just loveing
+                  with this templete </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------------customar part end------------------------ -->
+  <!-- =================counter part start================== -->
+  <section id="customar_review">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="customar_review_row">
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="customar_review_col">
+              <div class="customar_review_icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="customar_review_head">
+                <h2 class="counter">10000</h2>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1500" class="customar_review_col customar_svg">
+              <div class="customar_review_icon">
+                <svg width="512" height="512" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor"
+                    d="M958 446q-15 16-31 34t-40.5 48t-39.5 60t-15 52q0 27-93.5 45.5T512 704t-226.5-18.5T192 640q0-29-27-72.5t-50.5-70T68 448Q0 382 0 288q0-93 65.5-158.5T224 64q23 0 48 5q-16 41-16 91q0 107 66 178q-2-54-2-114q0-93 56-158.5T512 0t136 65.5T704 224q0 61-2 114q66-71 66-178q0-50-16-91q25-5 48-5q93 0 158.5 65.5T1024 288t-66 158zM511.5 768Q644 768 738 749t94-45v256q0 26-94 45t-226.5 19t-226-19t-93.5-45V704q0 27 93.5 45.5t226 18.5z" />
+                </svg>
+              </div>
+              <div class="customar_review_head">
+                <h2 class="counter">30</h2>
+                <p>Our Chef</p>
+              </div>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1500" class="customar_review_col customar">
+              <div class="customar_review_icon">
+                <svg width="50" height="50" viewBox="0 0 1024 768" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor"
+                    d="M992 640H32q-13 0-22.5-9.5T0 608q0-188 116.5-320.5T416 128q13 0 22.5-9.5T448 96t-9.5-22.5T416 64t-22.5-9.5T384 32t9.5-22.5T416 0h192q13 0 22.5 9.5T640 32t-9.5 22.5T608 64t-22.5 9.5T576 96t9.5 22.5T608 128q183 27 299.5 159.5T1024 608q0 13-9.5 22.5T992 640zM32 704h960q13 0 22.5 9.5t9.5 22.5t-9.5 22.5T992 768H32q-13 0-22.5-9.5T0 736t9.5-22.5T32 704z" />
+                </svg>
+              </div>
+              <div class="customar_review_head">
+                <h2 class="counter">250</h2>
+                <p>Our Favourite Dishes</p>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="customar_review_col">
+              <div class="customar_review_icon">
+                <i class="fa-solid fa-thumbs-up"></i>
+              </div>
+              <div class="customar_review_head">
+                <h2 class="counter">5</h2>
+                <p>Customar Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------counter part end------------------- -->
+  <!-- ========================download part start====================== -->
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="download_row">
+            <div data-aos="fade-up-right" data-aos-duration="1500" class="download_col">
+              <div class="download_heading">
+                <h2>Fast Order</h2>
+                <h3>Download Our Mobile <span>App</span></h3>
+                <p>Food Delivery full app that allows you to use a fully functional Food delivery for both Android/iOS
+                  and
+                  Website</p>
+              </div>
+              <div class="download_button">
+                <a href="#"><img src="image/play store (1).png" class="image-fluid w-100" alt="play store">Google
+                  Play</a>
+                <a href="#"><img src="image/app store.png" class="image-fluid w-100" alt="play store">App Store</a>
+              </div>
+            </div>
+            <div data-aos="fade-up-left" data-aos-duration="1500" class="download_img">
+              <img src="image/Group 88.png" class="image-fluid w-100" alt="downlaod mobile apps">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------------download part end---------------------- -->
+  <!-- ===========================booking_table start========================== -->
+  <section id="table">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div data-aos="zoom-in-up" data-aos-duration="1500" class="table_heading">
+            <h2>Booking <span>Table</span></h2>
+            <h3>Make A Reservation</h3>
+          </div>
+          <div data-aos="zoom-in-down" data-aos-duration="1500" class="table_col">
+            <div class="table_search_box">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="table_search_box">
+              <i class="fa-solid fa-phone"></i>
+              <input type="text" placeholder="Phone Number">
+            </div>
+            <div class="table_search_box">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="table_search_box">
+              <i class="fa-solid fa-calendar"></i>
+              <input type="date" class="date" value="Sun,December 12,2023">
+            </div>
+            <div class="table_search_box">
+              <i class="fa-regular fa-clock"></i>
+              <input type="time" class="time" value="10:00">
+            </div>
+            <div class="table_search_box">
+              <i class="fa-solid fa-users"></i>
+              <select name="person" id="person">
+                <option value="ami aka ">Person</option>
+                <option value="ami aka ">person 1</option>
+                <option value="ami aka ">person 2</option>
+                <option value="ami aka ">person 3</option>
+                <option value="ami aka ">person 4</option>
+                <option value="ami aka ">person 5</option>
+                <option value="ami aka ">person 6</option>
+                <option value="ami aka ">person 7</option>
+                <option value="ami aka ">person 8</option>
+              </select>
+            </div>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1500" class="booking_table">
+            <a href="#">Reservation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------------booking table end------------------------------ -->
+  <!-- =============================footer part start============================ -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer_row">
+            <div data-aos="fade-right" data-aos-duration="1500" class="footer_col">
+              <div class="footer_logo">
+                <a href="#"><img src="image/menu logo.png" class="image-fluid w-100" alt="footer logo"></a>
+              </div>
+              <div class="footer_address">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-house-chimney"></i> <span>Daulatpur-Bangora-Comilla</span></a>
+                  </li>
+                  <li>
+                    <a class="footer_location" href="#"><i class="fa-solid fa-location-dot"></i><span>PXHQ+RM2,
+                        Companiganj
+                        - Nabinagar Rd, Daulatpur</span></a>
+                  </li>
+                  <li>
+                    <a href="tel:"><i class="fa-solid fa-phone"></i><span>01716378105</span></a>
+                  </li>
+                  <li>
+                    <a href="mailto:"><i class="fa-solid fa-envelope"></i><span>arifmominweb@gmail.com</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_download_button">
+                <a href="#"><img src="image/footer play button.png" class="image-fluid w-100" alt="play store">Google
+                  Play</a>
+                <a href="#"><img src="image/footer app button.png" class="image-fluid w-100" alt="play store">App
+                  Store</a>
+              </div>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1500" class="footer_col">
+              <div class="footer_heading">
+                <h2>Oppening Time</h2>
+                <ul>
+                  <li>Saturday <span>9AM to 11PM</span></li>
+                  <li>Sunday <span>9AM to 11PM</span></p></li>
+                  <li>Munday <span>9AM to 11PM</span></li>
+                  <li>Tuesday <span>9AM to 11PM</span></li>
+                  <li>Wednesday <span>9AM to 11PM</span></li>
+                  <li>Thuesday <span>9AM to 11PM</span></li>
+                  <li>Friday <span>Closed</span></li>
+                </ul>
+              </div>
+            </div>
+            <div data-aos="flip-right" data-aos-duration="1500" class="footer_col">
+              <div class="footer_service_heading">
+                <h2>Our Service</h2>
+              </div>
+              <div class="footer_service_list one">
+                <ul>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Transation</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Exchange</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Investments</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Shopping</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Home service</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Fantales</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Quality</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1500" class="footer_col">
+              <div class="footer_service_heading">
+                <h2>Usefull Link</h2>
+              </div>
+              <div class="footer_service_list two">
+                <ul>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>How to buy online</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Overview</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Payment Option</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Legal & Security</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Contact Center</a>
+                  </li>
+                  <li>
+                    <a href="#"> <span><i class="fa-solid fa-forward"></i></span>Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------------footer part end------------------------------- -->
+  <!-- =================copyright part start================== -->
+  <section id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright_col">
+            <div class="copyright_heading">
+              <p>All rights reserved © 2023 Arif Resturant</p>
+            </div>
+            <div class="copyright_social_link">
+              <ul>
+                <li>
+                  <a class="fbk" href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                </li>
+                <li>
+                  <a class="twit" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="whats" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright_img">
+              <a href="#"><img src="image/paypal.png" class="image-fluid w-100" alt="paypal-img"></a>
+              <a href="#"><img src="image/creadit card.png" class="image-fluid w-100" alt="paypal-img"></a>
+              <a href="#"><img src="image/devit card.png" class="image-fluid w-100" alt="paypal-img"></a>
+              <a href="#"><img src="image/master card.png" class="image-fluid w-100" alt="paypal-img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------copyright part end------------------- -->
+  <!-- ===============================java script link ================================ -->
+  <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/lineSpinner.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
